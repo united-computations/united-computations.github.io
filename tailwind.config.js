@@ -13,6 +13,7 @@ module.exports = {
         secondary: 'rgba(249, 250, 251, 0.54)',
         tertiary: colors.zinc['700'],
         dark: '#26252C',
+        grape: 'rgb(29, 28, 34)', // TODO: grape might not be the best name for this
         midnight: colors.zinc['900']
       },
       animation: {

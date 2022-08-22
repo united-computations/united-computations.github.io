@@ -6,7 +6,7 @@ import Section from './Section';
 export default function GunnHacks() {
     return (
         <>
-            <section className="flex gap-3 px-20 py-8 dark:bg-[rgb(27,_26,_31)] overflow-x-auto snap-x">
+            <section className="flex gap-3 px-20 py-8 dark:bg-grape overflow-x-auto snap-x scrollbar-thin">
                 <GunnHacksCard name="8.0" href="https://www.gunnhacks.com/">
                     February 5-6, 2022
                 </GunnHacksCard>
@@ -17,10 +17,10 @@ export default function GunnHacks() {
                     Cancelled
                 </GunnHacksCard>
                 {/*
-                    <GunnHacksCard name="5.0" href="https://5.0.gunnhacks.com/">
-                        ...
-                    </GunnHacksCard>
-                    */}
+                <GunnHacksCard name="5.0" href="https://5.0.gunnhacks.com/">
+                    ...
+                </GunnHacksCard>
+                */}
                 <GunnHacksCard name="4.0" href="https://4.0.gunnhacks.com/">
                     October 27-28, 2017
                 </GunnHacksCard>

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import GunnHacks from '../components/GunnHacks';
 import Officers from '../components/Officers';
+import Footer from '../components/Footer';
 
 
 export default function Home() {
@@ -16,6 +17,8 @@ export default function Home() {
             <Header />
             <GunnHacks />
             <Officers />
+
+            <Footer />
         </div>
     )
 }
