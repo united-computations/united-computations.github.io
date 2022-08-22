@@ -23,17 +23,17 @@ export default function Header() {
                 </CodeText>
             </div>
 
-            <div className="flex justify-center divide-x-2 divide-gray-400/30 mb-12">
+            <div className="flex justify-center divide-x-2 divide-tertiary mb-12">
                 <DivideCard>
-                    <p className="text-sm text-gray-300/40">Room:</p>
+                    <p className="text-sm text-secondary">Room:</p>
                     <strong className="text-2xl">N-215</strong>
                 </DivideCard>
                 <DivideCard>
-                    <p className="text-sm text-gray-300/40">Day:</p>
+                    <p className="text-sm text-secondary">Day:</p>
                     <strong className="text-2xl">Wednesday</strong>
                 </DivideCard>
                 <DivideCard>
-                    <p className="text-sm text-gray-300/40">Time:</p>
+                    <p className="text-sm text-secondary">Time:</p>
                     <strong className="text-2xl">Lunch</strong>
                 </DivideCard>
             </div>

@@ -13,7 +13,7 @@ class UCDocument extends Document {
                 <Head>
                     <meta charSet="utf-8" />
                 </Head>
-                <body className="h-full dark:text-white dark:bg-zinc-900">
+                <body className="h-full dark:text-white dark:bg-midnight">
                     <Main />
                     <NextScript />
                 </body>

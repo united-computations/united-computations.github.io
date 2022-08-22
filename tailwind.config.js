@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +9,12 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        secondary: 'rgba(249, 250, 251, 0.54)',
+        tertiary: colors.zinc['700'],
+        dark: '#26252C',
+        midnight: colors.zinc['900']
+      },
       animation: {
         blink: 'blink 1s infinite'
       },

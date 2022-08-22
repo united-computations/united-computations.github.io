@@ -47,11 +47,11 @@ export default function GunnHacks() {
 
 function GunnHacksCard(props: {name: string, href: string, children: ReactNode}) {
     return (
-        <a className="snap-center flex-none rounded-md bg-zinc-900 shadow-lg overflow-hidden border dark:border-zinc-700 dark:hover:border-gray-300 transition duration-200" href={props.href} target="_blank" rel="noopener noreferrer">
+        <a className="snap-center flex-none rounded-md bg-midnight shadow-lg overflow-hidden border dark:border-tertiary dark:hover:border-secondary transition duration-200" href={props.href} target="_blank" rel="noopener noreferrer">
             <img src={`/gunnhacks/${props.name}.png`} alt={props.name} className="w-72 h-44 object-cover" />
             <div className="px-5 py-4 flex gap-3 items-center">
                 <h5 className="font-mono font-medium">{props.name}</h5>
-                <p className="text-sm text-gray-300/40">{props.children}</p>
+                <p className="text-sm text-secondary">{props.children}</p>
             </div>
         </a>
     )
