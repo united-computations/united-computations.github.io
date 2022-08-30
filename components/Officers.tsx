@@ -23,10 +23,10 @@ export default function Officers() {
                 <OfficerCard name="Roger Fan" position="Co-vice-president" src="/officers/roger.JPG" reverse>
                     ...
                 </OfficerCard>
-                <OfficerCard name="Anthony Ho" position="Secretary" src="">
+                <OfficerCard name="Anthony Ho" position="Secretary" src="/officers/anthony.jpg">
                     ...
                 </OfficerCard>
-                <OfficerCard name="Vivien Chen" position="Co-vice-president" src="" reverse>
+                <OfficerCard name="Vivien Chen" position="Treasurer" src="/officers/vivien.png" reverse>
                     ...
                 </OfficerCard>
             </div>
