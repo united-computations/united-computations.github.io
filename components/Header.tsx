@@ -15,11 +15,11 @@ export default function Header() {
                     United Computations is one of the largest and longest running CS clubs at Gunn.
                 </CodeText>
                 <CodeText>
-                    Through regular lunch meetings, ___, we aim to spread interest in computer science and create a
+                    Through regular lunch meetings and our annual hackathon, we aim to spread interest in computer science and create a
                     passionate community of programmers.
                 </CodeText>
                 <CodeText>
-                    Join our community Wednesdays at lunch in N-215 and ___.
+                    Join our community Wednesdays at lunch in N-215 and have fun with us!
                 </CodeText>
             </div>
 
