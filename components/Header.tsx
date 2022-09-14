@@ -23,7 +23,7 @@ export default function Header() {
                 </CodeText>
             </div>
 
-            <div className="flex justify-center divide-x-2 divide-tertiary mb-12">
+            <div className="flex flex-col md:flex-row justify-center divide-y-2 md:divide-y-0 md:divide-x-2 divide-tertiary mb-12">
                 <DivideCard>
                     <p className="text-sm text-secondary">Room:</p>
                     <strong className="text-2xl">N-215</strong>
@@ -57,7 +57,7 @@ function CodeText(props: {children: ReactNode}) {
 
 function DivideCard(props: {children: ReactNode}) {
     return (
-        <div className="flex flex-col px-6 justify-center">
+        <div className="flex flex-col py-4 md:py-0 md:px-6 justify-center">
             {props.children}
         </div>
     )
