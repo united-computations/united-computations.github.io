@@ -19,7 +19,7 @@ export default function Header() {
                     passionate community of programmers.
                 </CodeText>
                 <CodeText>
-                    Join our community Wednesdays at lunch in N-215 and ___.
+                    Join our community Wednesdays at lunch in N-215 and have fun with us!
                 </CodeText>
             </div>
 
