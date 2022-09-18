@@ -14,7 +14,7 @@ export default function GunnHacks() {
     useEffect(() => {
         const id = setInterval(
             () => setImageIndex((imageIndex) => (imageIndex + 1) % images.length),
-            8 * 1000
+            6 * 1000
         );
         return () => clearInterval(id);
     }, []);
