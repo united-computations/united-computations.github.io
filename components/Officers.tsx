@@ -55,39 +55,29 @@ function OfficerCard(props: OfficerCardProps) {
                 </h3>
                 <h4 className="text-sm text-secondary mb-2">{position}</h4>
                 <p>{children}</p>
-                {languages && <LanguageIcons languages={languages} />}
+                {languages && (
+                    <div className="flex gap-2 text-lg mt-3">
+                        {languages.map(l => <LanguageIcon key={l} language={l} />)}
+                    </div>
+                )}
             </div>
         </div>
     )
 }
 
 type Language = "react" | "next" | "vue" | "nuxt" | "svelte" | "ts" | "py" | "java" | "kt" | "rs" | "cs";
-function LanguageIcons(props: {languages: Language[]}) {
-    return (
-        <div className="flex gap-2 text-lg mt-3">
-            {props.languages.map(l => l === 'kt' ? (
-                <SiKotlin />
-            ) : l === 'react' ? (
-                <SiReact />
-            ) : l === 'next' ? (
-                <SiNextdotjs />
-            ) : l === 'vue' ? (
-                <SiVuedotjs />
-            ) : l === 'nuxt' ? (
-                <SiNuxtdotjs />
-            ) : l === 'ts' ? (
-                <SiTypescript />
-            ) : l === 'java' ? (
-                <SiJava />
-            ) : l === 'rs' ? (
-                <SiRust />
-            ) : l === 'cs' ? (
-                <SiCsharp />
-            ) : l === 'py' ? (
-                <SiPython />
-            ) : (
-                <SiSvelte />
-            ))}
-        </div>
-    )
+function LanguageIcon(props: {language: Language}) {
+    switch (props.language) {
+        case 'react': return <SiReact />;
+        case 'next': return <SiNextdotjs />;
+        case 'vue': return <SiVuedotjs />;
+        case 'nuxt': return <SiNuxtdotjs />;
+        case 'svelte': return <SiSvelte />;
+        case 'ts': return <SiTypescript />;
+        case 'py': return <SiPython />;
+        case 'java': return <SiJava />;
+        case 'kt': return <SiKotlin />;
+        case 'rs': return <SiRust />;
+        default: return <SiCsharp />;
+    }
 }
