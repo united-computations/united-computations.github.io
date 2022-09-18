@@ -1,5 +1,6 @@
 import {ReactNode} from 'react';
 import Section from './Section';
+import {SiReact, SiNextdotjs, SiVuedotjs, SiNuxtdotjs, SiSvelte, SiTypescript, SiPython, SiJava, SiKotlin, SiRust, SiCsharp} from 'react-icons/si';
 
 
 // The "Meet our officers" section on the home page.
@@ -11,23 +12,28 @@ export default function Officers() {
             <h2 className="font-bold text-4xl mb-6">Meet our officers:</h2>
 
             <div className="max-w-3xl mx-auto divide-y divide-tertiary/50">
-                <OfficerCard name="Saumya Singhal" position="Co-president" src="/officers/saumya.png">
-                    A cantilever is a rigid structural element that extends horizontally and is supported at only one end. Typically it extends from a flat vertical surface such as a wall, to which it must be firmly attached. Like other structural elements, a cantilever can be formed as a beam, plate, truss, or slab.
+                <OfficerCard name="Saumya Singhal" position="Co-president" src="/officers/saumya.png" languages={['vue', 'nuxt', 'ts']}>
+                    Saumya Singhal is an avid Vue developer, math addict, and founder of YMath and Gunn.One. She is also
+                    the vice president of Physics Club and Math Circle and the founder and director of the JLS Math
+                    Circle.
                 </OfficerCard>
-                <OfficerCard name="Alec Petridis" position="Co-president" src="/officers/alec.png" reverse>
-                    A cantilever is a rigid structural element that extends horizontally and is supported at only one end. Typically it extends from a flat vertical surface such as a wall, to which it must be firmly attached. Like other structural elements, a cantilever can be formed as a beam, plate, truss, or slab.
+                <OfficerCard name="Alec Petridis" position="Co-president" src="/officers/alec.png" languages={['java', 'rs']} reverse>
+                    Alec Petridis is an outspoken Rustacean and Antipodean. He enjoys finding exploits, participating in
+                    CTFs, and doing deep dives into lower-level systems like kernels and the V8 compiler.
                 </OfficerCard>
-                <OfficerCard name="Kevin Yu" position="Co-vice-president" src="/officers/kevin.png">
-                    A cantilever is a rigid structural element that extends horizontally and is supported at only one end. Typically it extends from a flat vertical surface such as a wall, to which it must be firmly attached. Like other structural elements, a cantilever can be formed as a beam, plate, truss, or slab.
+                <OfficerCard name="Kevin Yu" position="Co-vice president" src="/officers/kevin.png" languages={['react', 'next', 'ts', 'cs', 'kt', 'svelte']}>
+                    Kevin Yu is a TypeScript enthusiast and co-founder of WATT. He is also the SEC Tech Commissioner, a
+                    member of the GRT controls subgroup member, and the GRT webmaster.
                 </OfficerCard>
-                <OfficerCard name="Roger Fan" position="Co-vice-president" src="/officers/roger.JPG" reverse>
-                    A cantilever is a rigid structural element that extends horizontally and is supported at only one end. Typically it extends from a flat vertical surface such as a wall, to which it must be firmly attached. Like other structural elements, a cantilever can be formed as a beam, plate, truss, or slab.
+                <OfficerCard name="Roger Fan" position="Co-vice president" src="/officers/roger.JPG" languages={['react', 'next', 'ts']} reverse>
+                    Roger Fan is a competitive mathlete and WATT contributor. He is also the co-vice president of Math
+                    Circle and a devout Figma enthusiast.
                 </OfficerCard>
-                <OfficerCard name="Anthony Ho" position="Secretary" src="/officers/anthony.jpg">
-                    A cantilever is a rigid structural element that extends horizontally and is supported at only one end. Typically it extends from a flat vertical surface such as a wall, to which it must be firmly attached. Like other structural elements, a cantilever can be formed as a beam, plate, truss, or slab.
+                <OfficerCard name="Anthony Ho" position="Secretary" src="/officers/anthony.jpg" languages={['java', 'py']}>
+                    Anthony Ho ___.
                 </OfficerCard>
                 <OfficerCard name="Vivien Chen" position="Treasurer" src="/officers/vivien.png" reverse>
-                    A cantilever is a rigid structural element that extends horizontally and is supported at only one end. Typically it extends from a flat vertical surface such as a wall, to which it must be firmly attached. Like other structural elements, a cantilever can be formed as a beam, plate, truss, or slab.
+                    Vivien chen ___.
                 </OfficerCard>
             </div>
         </Section>
@@ -35,21 +41,53 @@ export default function Officers() {
 }
 
 type OfficerCardProps = {
-    name: string, position: "Co-president" | "Co-vice-president" | "Secretary" | "Treasurer",
-    src: string, children: ReactNode, reverse?: boolean
+    name: string, position: "Co-president" | "Co-vice president" | "Secretary" | "Treasurer",
+    src: string, children: ReactNode, languages?: Language[], reverse?: boolean
 }
 function OfficerCard(props: OfficerCardProps) {
-    const {name, position, src, children, reverse} = props;
+    const {name, position, src, children, languages, reverse} = props;
     return (
         <div className={'flex gap-8 md:gap-10 py-7' + (reverse ? ' flex-row-reverse' : '')}>
             <img src={src} alt={name} className="w-24 h-24 md:w-36 md:h-36 rounded-full object-cover flex-none" />
             <div className="flex-grow py-2.5">
-                <h3 className={'text-3xl font-bold mb-1 underline underline-offset-4 decoration-[3px] ' + (position === 'Co-president' ? 'decoration-rose-500' : position === 'Co-vice-president' ? 'decoration-orange-500' : position === 'Secretary' ? 'decoration-amber-500' : 'decoration-yellow-500')}>
+                <h3 className={'text-3xl font-bold mb-1 underline underline-offset-4 decoration-[3px] ' + (position === 'Co-president' ? 'decoration-rose-500' : position === 'Co-vice president' ? 'decoration-orange-500' : position === 'Secretary' ? 'decoration-amber-500' : 'decoration-yellow-500')}>
                     {name}
                 </h3>
                 <h4 className="text-sm text-secondary mb-2">{position}</h4>
                 <p>{children}</p>
+                {languages && <LanguageIcons languages={languages} />}
             </div>
+        </div>
+    )
+}
+
+type Language = "react" | "next" | "vue" | "nuxt" | "svelte" | "ts" | "py" | "java" | "kt" | "rs" | "cs";
+function LanguageIcons(props: {languages: Language[]}) {
+    return (
+        <div className="flex gap-2 text-lg mt-3">
+            {props.languages.map(l => l === 'kt' ? (
+                <SiKotlin />
+            ) : l === 'react' ? (
+                <SiReact />
+            ) : l === 'next' ? (
+                <SiNextdotjs />
+            ) : l === 'vue' ? (
+                <SiVuedotjs />
+            ) : l === 'nuxt' ? (
+                <SiNuxtdotjs />
+            ) : l === 'ts' ? (
+                <SiTypescript />
+            ) : l === 'java' ? (
+                <SiJava />
+            ) : l === 'rs' ? (
+                <SiRust />
+            ) : l === 'cs' ? (
+                <SiCsharp />
+            ) : l === 'py' ? (
+                <SiPython />
+            ) : (
+                <SiSvelte />
+            ))}
         </div>
     )
 }

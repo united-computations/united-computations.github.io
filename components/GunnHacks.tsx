@@ -70,9 +70,11 @@ export default function GunnHacks() {
                             <GradientButton href="https://www.gunnhacks.com">
                                 Go to website
                             </GradientButton>
-                            <GradientButton href="..."> {/* TODO */}
+                            {/* TODO
+                            <GradientButton href="...">
                                 Register for organizer
                             </GradientButton>
+                            */}
                         </div>
                     </div>
                 </div>
