@@ -7,7 +7,7 @@ import Section from './Section';
 export default function GunnHacks() {
     const [imageIndex, setImageIndex] = useState(0);
     const images = [
-        '/ghacks/ghacks-1.png', '/ghacks/ghacks-2.png', '/ghacks/ghacks-3.png'
+        '/ghacks/ghacks-1.jpg', '/ghacks/ghacks-2.jpg', '/ghacks/ghacks-3.jpg'
     ];
 
     // Transition the image slideshow every 8 seconds
@@ -62,7 +62,7 @@ export default function GunnHacks() {
                             GunnHacks
                         </h2>
                         <p className="mb-6">
-                            Make, Build, Create & Learn at Gunn's annual hackathon, GunnHacks, organized by United Computations!
+                            Make, build, create & learn at Gunn's annual hackathon, GunnHacks, organized by United Computations!
                             Every year, hundreds of students across the bay create projects, attend workshops, participate
                             in activities, and compete for prizes our in-person, 24-hour hackathon.
                         </p>
