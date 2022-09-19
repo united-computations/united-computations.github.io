@@ -51,8 +51,8 @@ export default function GunnHacks() {
             </section>
 
             <Section secondary>
-                <div className="flex gap-10">
-                    <div className="relative rounded shadow-xl overflow-hidden w-[28rem] h-[19rem] flex-none">
+                <div className="flex gap-10 flex-wrap lg:flex-nowrap justify-center">
+                    <div className="relative rounded shadow-xl overflow-hidden w-[min(100%,_28rem)] h-[19rem] flex-none">
                         {images.map((src, i) => (
                             <SlideshowImage src={src} show={imageIndex === i} key={src} />
                         ))}
