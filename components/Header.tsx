@@ -4,7 +4,7 @@ import {ReactNode} from 'react';
 // The code-editor-inspired header section on the home page.
 export default function Header() {
     return (
-        <header className="container">
+        <section className="container pt-36">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-10">
                 United Computations
                 <span className="animate-blink">_</span>
@@ -37,7 +37,7 @@ export default function Header() {
                     <strong className="text-2xl">Lunch</strong>
                 </DivideCard>
             </div>
-        </header>
+        </section>
     )
 }
 
