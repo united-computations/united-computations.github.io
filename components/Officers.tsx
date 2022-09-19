@@ -23,7 +23,7 @@ export default function Officers() {
                 </OfficerCard>
                 <OfficerCard name="Kevin Yu" position="Co-vice president" src="/officers/kevin.png" languages={['react', 'next', 'ts', 'cs', 'kt', 'svelte']}>
                     Kevin Yu is a TypeScript enthusiast and co-founder of WATT. He is also the SEC Tech Commissioner, a
-                    member of the GRT controls subgroup member, and the GRT webmaster.
+                    member of the GRT controls subgroup, and the GRT webmaster.
                 </OfficerCard>
                 <OfficerCard name="Roger Fan" position="Co-vice president" src="/officers/roger.JPG" languages={['react', 'next', 'ts']} reverse>
                     Roger Fan is a competitive mathlete and WATT contributor. He is also the co-vice president of Math
@@ -32,8 +32,9 @@ export default function Officers() {
                 <OfficerCard name="Anthony Ho" position="Secretary" src="/officers/anthony.jpg" languages={['java', 'py']}>
                     Anthony Ho ___.
                 </OfficerCard>
-                <OfficerCard name="Vivien Chen" position="Treasurer" src="/officers/vivien.png" reverse>
-                    Vivien chen ___.
+                <OfficerCard name="Vivien Chen" position="Treasurer" src="/officers/vivien.png" languages={['java', 'py']} reverse>
+                    Vivien Chen is a Python and Scheme enthusiast interested in learning more about AI. She is also a
+                    rookie in GRT. Sometimes she attempts to competitive program.
                 </OfficerCard>
             </div>
         </Section>
