@@ -8,8 +8,8 @@ import {VscChromeMinimize, VscChromeRestore, VscChromeClose} from 'react-icons/v
 export default function Nav() {
     return (
         <header>
-            <div className="text-sm border-b border-secondary/10 text-secondary p-2 flex gap-4 items-center">
-                <img src="/lambda.png" className="h-5 w-5" alt="Lambda" />
+            <div className="text-xs border-b border-secondary/10 text-secondary px-2.5 py-2 flex gap-3.5 items-center">
+                <img src="/lambda.png" className="h-4 w-4" alt="Lambda" />
                 <span>File</span>
                 <span>Edit</span>
                 <span>Selection</span>
