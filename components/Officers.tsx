@@ -30,7 +30,10 @@ export default function Officers() {
                     Circle and a devout Figma enthusiast.
                 </OfficerCard>
                 <OfficerCard name="Anthony Ho" position="Secretary" src="/officers/anthony.jpg" languages={['java', 'py']}>
-                    Anthony Ho ___.
+                    Anthony Ho is a junior at Gunn High School. He has experience in Java and Python, and is most interested
+                    in exploring data science applications across different domains. Anthony has been involved in organizing
+                    GunnHacks since freshman year and is excited to bring the best possible hacker experience to this year's
+                    iteration. In his free time, he enjoys swimming, playing piano, and traveling.
                 </OfficerCard>
                 <OfficerCard name="Vivien Chen" position="Treasurer" src="/officers/vivien.png" languages={['java', 'py']} reverse>
                     Vivien Chen is a Python and Scheme enthusiast interested in learning more about AI. She is also a
