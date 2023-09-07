@@ -1,4 +1,4 @@
-import {ReactNode} from 'react';
+import { ReactNode } from 'react';
 
 
 // The code-editor-inspired header section on the home page.
@@ -19,7 +19,7 @@ export default function Header() {
                     passionate community of programmers.
                 </CodeText>
                 <CodeText index={3}>
-                    Join our community Wednesdays at lunch in N-215 and have fun with us!
+                    Join our community Thursdays at lunch in N-215 and have fun with us!
                 </CodeText>
             </div>
 
@@ -30,7 +30,7 @@ export default function Header() {
                 </DivideCard>
                 <DivideCard>
                     <p className="text-sm text-secondary">Day:</p>
-                    <strong className="text-2xl">Wednesday</strong>
+                    <strong className="text-2xl">Thursday</strong>
                 </DivideCard>
                 <DivideCard>
                     <p className="text-sm text-secondary">Time:</p>
@@ -41,7 +41,7 @@ export default function Header() {
     )
 }
 
-function CodeText(props: {index: number, children: ReactNode}) {
+function CodeText(props: { index: number, children: ReactNode }) {
     return (
         <p className="text-lg text-center font-mono flex gap-3 items-center justify-center">
             <code className="absolute left-4 text-secondary py-3.5 pr-5 lg:border-r lg:border-gray-600">{props.index}</code>
@@ -56,7 +56,7 @@ function CodeText(props: {index: number, children: ReactNode}) {
     )
 }
 
-function DivideCard(props: {children: ReactNode}) {
+function DivideCard(props: { children: ReactNode }) {
     return (
         <div className="flex flex-col py-4 md:py-0 md:px-6 justify-center">
             {props.children}

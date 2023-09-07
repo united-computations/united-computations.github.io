@@ -1,5 +1,5 @@
-import {ReactNode, useState, useEffect, Fragment} from 'react';
-import {Transition} from '@headlessui/react';
+import { ReactNode, useState, useEffect, Fragment } from 'react';
+import { Transition } from '@headlessui/react';
 import Section from './Section';
 
 
@@ -22,7 +22,10 @@ export default function GunnHacks() {
     return (
         <>
             <section className="flex gap-3 px-20 py-8 dark:bg-grape overflow-x-auto snap-x scrollbar-thin">
-                <GunnHacksCard name="8.0" href="https://www.gunnhacks.com/">
+                <GunnHacksCard name="9.0" href="https://www.gunnhacks.com/">
+                    January 21-22, 2023
+                </GunnHacksCard>
+                <GunnHacksCard name="8.0" href="https://8.0.gunnhacks.com/">
                     February 5-6, 2022
                 </GunnHacksCard>
                 <GunnHacksCard name="7.0" href="https://7.0.gunnhacks.com/">
@@ -83,7 +86,7 @@ export default function GunnHacks() {
     )
 }
 
-function GradientButton(props: {href: string, children: ReactNode}) {
+function GradientButton(props: { href: string, children: ReactNode }) {
     return (
         <a href={props.href} target="_blank" rel="noopener noreferrer" className="block py-2 px-4 rounded-md font-medium bg-gradient-to-br from-rose-500 via-red-500 to-pink-500 shadow-md hover:shadow-lg !shadow-red-700 transition-shadow duration-200 focus:outline-none focus-visible:ring-[3px] focus-visible:ring-[0xFF7DADD9]">
             {props.children}
@@ -91,7 +94,7 @@ function GradientButton(props: {href: string, children: ReactNode}) {
     )
 }
 
-function GunnHacksCard(props: {name: string, href: string, children: ReactNode}) {
+function GunnHacksCard(props: { name: string, href: string, children: ReactNode }) {
     return (
         <a className="snap-center flex-none rounded-md bg-midnight shadow-lg overflow-hidden border dark:border-tertiary dark:hover:border-secondary transition duration-200 focus:outline-none focus-visible:ring-[3px] focus-visible:ring-[0xFF7DADD9]" href={props.href} target="_blank" rel="noopener noreferrer">
             <img src={`/ghacks/${props.name}.jpg`} alt={props.name} className="w-72 h-44 object-cover" />
@@ -104,7 +107,7 @@ function GunnHacksCard(props: {name: string, href: string, children: ReactNode})
 }
 
 // https://github.com/ky28059/GRTWebsite2.0/blob/main/components/Slideshow.tsx
-function SlideshowImage(props: {src: string, show: boolean}) {
+function SlideshowImage(props: { src: string, show: boolean }) {
     return (
         <Transition
             as={Fragment}
