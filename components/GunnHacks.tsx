@@ -22,6 +22,9 @@ export default function GunnHacks() {
     return (
         <>
             <section className="flex gap-3 px-20 py-8 dark:bg-grape overflow-x-auto snap-x scrollbar-thin">
+                <GunnHacksCard name="10.0" href="https://www.gunnhacks.com/">
+                    January 27-28, 2024
+                </GunnHacksCard>
                 <GunnHacksCard name="9.0" href="https://www.gunnhacks.com/">
                     January 21-22, 2023
                 </GunnHacksCard>
