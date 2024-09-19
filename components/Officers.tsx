@@ -16,7 +16,7 @@ export default function Officers() {
                     Stella Su is an avid programmer interested in artificial intelligence and computational biology. She has 
                     had some experience with using Computer Vision and Natural Language Processing(NLP) models.
                 </OfficerCard>
-                <OfficerCard name="Daniel Kou" position="Vice president" src="/officers/daniel.png" languages={['java', 'py', 'clang', 'cplusplus', ]}>
+                <OfficerCard name="Daniel Kou" position="Vice President" src="/officers/daniel.png" languages={['java', 'py', 'clang', 'cplusplus', ]}>
                     Daniel Kou is a C++ and Python enthusiast who is interested in data science, robotics control, and AI. 
                     He does FRC and competitive programming/physics/math. 
                 </OfficerCard>
