@@ -33,7 +33,7 @@ export default function Officers() {
 }
 
 type OfficerCardProps = {
-    name: string, position: "Co-president" | "Co-vice president" | "Secretary" | "Treasurer",
+    name: string, position: "Co-president" | "President" | "Co-vice president" | "Vice President" | "Secretary" | "Treasurer",
     src: string, children: ReactNode, languages?: Language[], reverse?: boolean
 }
 function OfficerCard(props: OfficerCardProps) {
