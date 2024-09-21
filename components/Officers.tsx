@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import Section from './Section';
-import { SiReact, SiNextdotjs, SiVuedotjs, SiNuxtdotjs, SiSvelte, SiTypescript, SiPython, SiJava, SiKotlin, SiRust, SiCsharp, SiCplusplus, SiC} from 'react-icons/si';
+import { SiReact, SiNextdotjs, SiVuedotjs, SiNuxtdotjs, SiSvelte, SiTypescript, SiPython, SiJava, SiKotlin, SiRust, SiCsharp, SiCplusplus, SiC, SiJavascript} from 'react-icons/si';
 
 
 // The "Meet our officers" section on the home page.
@@ -16,7 +16,7 @@ export default function Officers() {
                     Stella Su is an avid programmer interested in artificial intelligence and computational biology. She has 
                     had some experience with using Computer Vision and Natural Language Processing(NLP) models.
                 </OfficerCard>
-                <OfficerCard name="Daniel Kou" position="Vice President" src="/officers/daniel.png" languages={['java', 'py', 'clang', 'cplusplus', ]}>
+                <OfficerCard name="Daniel Kou" position="Vice President" src="/officers/daniel.png" languages={['java', 'py', 'clang', 'cplusplus', ]} reverse>
                     Daniel Kou is a C++ and Python enthusiast who is interested in data science, robotics control, and AI. 
                     He does FRC and competitive programming/physics/math. 
                 </OfficerCard>
@@ -24,8 +24,8 @@ export default function Officers() {
                     Hannah Mei is a junior at Gunn High School with experience in java, scheme, and a bit of python. She is 
                     most interested in learning more about web development
                 </OfficerCard>
-                <OfficerCard name="Mary Yu" position="Treasurer" src="/officers/mary.png" languages={[]} reverse>
-                    {/* Stella Su is a ___. */}
+                <OfficerCard name="Mary Yu" position="Treasurer" src="/officers/mary.png" languages={['javascript', 'java']} reverse>
+                    {Mary Yu is a typescript enjoyer, she is interested in AI integration in databases.}
                 </OfficerCard>
             </div>
         </Section>
@@ -57,7 +57,7 @@ function OfficerCard(props: OfficerCardProps) {
     )
 }
 
-type Language = "react" | "next" | "vue" | "nuxt" | "svelte" | "ts" | "py" | "java" | "kt" | "rs" | "cs" | "cplusplus" | "clang";
+type Language = "react" | "next" | "vue" | "nuxt" | "svelte" | "ts" | "py" | "java" | "javascript" | "kt" | "rs" | "cs" | "cplusplus" | "clang";
 function LanguageIcon(props: { language: Language }) {
     switch (props.language) {
         case 'react': return <SiReact />;
@@ -72,6 +72,7 @@ function LanguageIcon(props: { language: Language }) {
         case 'rs': return <SiRust />;
         case 'cplusplus': return <SiCplusplus />;
         case 'clang': return <SiC />;
+        case 'javascript': return <SiJavascript />;
         default: return <SiCsharp />;
     }
 }
