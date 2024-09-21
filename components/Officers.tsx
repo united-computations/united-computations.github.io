@@ -25,7 +25,7 @@ export default function Officers() {
                     most interested in learning more about web development
                 </OfficerCard>
                 <OfficerCard name="Mary Yu" position="Treasurer" src="/officers/mary.png" languages={['javascript', 'java']} reverse>
-                    {Mary Yu is a typescript enjoyer, she is interested in AI integration in databases.}
+                    Mary Yu is a typescript enjoyer, she is interested in AI integration in databases.
                 </OfficerCard>
             </div>
         </Section>
