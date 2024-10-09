@@ -25,7 +25,7 @@ export default function GunnHacks() {
                 <GunnHacksCard name="10.0" href="https://www.gunnhacks.com/">
                     January 27-28, 2024
                 </GunnHacksCard>
-                <GunnHacksCard name="9.0" href="https://www.gunnhacks.com/">
+                <GunnHacksCard name="9.0" href="https://9.0.gunnhacks.com/">
                     January 21-22, 2023
                 </GunnHacksCard>
                 <GunnHacksCard name="8.0" href="https://8.0.gunnhacks.com/">
