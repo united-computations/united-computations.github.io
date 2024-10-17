@@ -16,7 +16,7 @@ export default function Links() {
             <div className="flex flex-col pt-20">
                 <h1 className='block text-center text-4xl font-extrabold mb-12'>Gunn United Computations</h1>
                 <div className="flex flex-col mx-auto gap-4">
-                    <QuickLink className='bg-rose-500' to='https://docs.google.com/forms/d/e/1FAIpQLSd-lEAiVKMF5PeXsWF2LBUxknTchptL0GeJ3rJwS_wfkGTKVw/viewform' title='Mailing List Signup' />
+                    <QuickLink className='bg-rose-500' to='https://forms.gle/P9KE99RqyHyMwSBAA' title='Mailing List Signup' />
                     <QuickLink className='bg-red-500' to='https://docs.google.com/forms/d/e/1FAIpQLSfHF5w1sZc5pjj1PBjm9udRRgl60IeWxEf4Y0lAXCETPfuN4g/viewform?entry.676984385=United%20Computations' title='Attendance' />
                     <QuickLink className='bg-orange-500' to='https://tinyurl.com/gunnucdiscord' title='Discord Server' />
                     <QuickLink className='bg-amber-500' to='/' title='Our Website' />
